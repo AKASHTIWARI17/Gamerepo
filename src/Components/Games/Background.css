@@ -1,0 +1,19 @@
+#box{
+    height:400px;
+    background-image: url("./background.png");
+    background-size: cover;
+    background-position: center;
+  }
+  #heading{
+    position: relative;
+    top: 600px;
+    width: 70%;
+    height: 25px;
+    margin-left: 160px;
+    border-radius: 10px;
+}
+#container{
+    height: 800px;
+    border:1px solid black;
+}
+    
