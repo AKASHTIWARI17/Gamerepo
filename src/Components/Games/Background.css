@@ -1,5 +1,8 @@
 #box{
     height:400px;
+    width: 95%;
+    position: relative;
+    left: 40px;
     background-image: url("./background.png");
     background-size: cover;
     background-position: center;
@@ -16,4 +19,19 @@
     height: 800px;
     border:1px solid black;
 }
-    
+#description{
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#navbar{
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+#nav-img{
+  position:relative;
+  left: 980px;
+}
+
+

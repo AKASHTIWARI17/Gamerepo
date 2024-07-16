@@ -55,6 +55,32 @@
     font-size: 25px;
 }
 
+@media screen and (max-width: 400px) {
+    .game-card{
+      width: 150px;
+      height: 150px;
+    }
+}
 
+@media screen and (max-width: 680px) {
+  
+    .game-card{
+      width: 200px;
+      height: 400px;
+      position: relative;
+      left:40px;
+    }
+   
+  }
+  
+  @media screen and (max-width: 980px) {
+    .game-card{
+      width: 300px;
+      height: 400px;
+      position: relative;
+      left:40px;
+    }
+   
+  }  
 
 
