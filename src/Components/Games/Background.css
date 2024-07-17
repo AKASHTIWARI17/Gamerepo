@@ -1,37 +1,116 @@
-#box{
-    height:400px;
-    width: 95%;
-    position: relative;
-    left: 40px;
-    background-image: url("./background.png");
-    background-size: cover;
-    background-position: center;
-  }
-  #heading{
-    position: relative;
-    top: 600px;
-    width: 70%;
-    height: 25px;
-    margin-left: 160px;
-    border-radius: 10px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-#container{
-    height: 800px;
-    border:1px solid black;
+
+#box {
+  height: 400px;
+  width: 95%;
+  position: relative;
+  left: 40px;
+  background-image: url("./background.png");
+  background-size: cover;
+  background-position: center;
 }
-#description{
-  color: black;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-#navbar{
+#navbar {
   text-align: center;
   position: relative;
   top: 30px;
 }
-#nav-img{
-  position:relative;
+
+#nav-img {
+  position: relative;
   left: 980px;
 }
 
+/* Media queries for responsiveness */
 
+@media screen and (max-width: 1200px) {
+  #box {
+      height: 400px;
+      left: 20px;
+  }
+
+  #description{
+      width: 80%;
+      margin-left: 80px;
+      top: 500px;
+  }
+
+  #nav-img {
+      left: 800px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #box {
+      left: 10px;
+      height: 350px;
+  }
+
+  #description{
+      width: 85%;
+      margin-left: 40px;
+      top: 450px;
+  }
+
+  #nav-img {
+      left: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #box {
+      left: 5px;
+      height: 300px;
+  }
+
+  #description{
+      width: 90%;
+      margin-left: 20px;
+      top: 400px;
+  }
+
+  #nav-img {
+      left: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #box {
+      width: 100%;
+      left: 15px;
+      top:45px;
+      height: 500px;
+  }
+
+  #description{
+      width: 95%;
+      margin-left: 30px;
+      top: 1000px;
+  }
+
+  #nav-img {
+      top:40px;
+      left:200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #box {
+      width: 100%;
+      left: 0;
+      height: 200px;
+  }
+
+  #heading {
+      width: 100%;
+      margin-left: 0;
+      top: 300px;
+  }
+
+  #nav-img {
+      left: 100px;
+  }
+}

@@ -3,13 +3,13 @@ import './Background.css'
 function Background() {
   return (
     <>
-      <div className="card">
+    <div className="card">
      <div>
       <h2 id='navbar'>Unlimeted mini Golf universe</h2>
      <img src={`${process.env.PUBLIC_URL}/logo-3.jpg`} className='h-10' alt="Logo" id='nav-img' />
      </div>
-        <img className='h-96 ' id='box' />
-        <p className='text-slate-900' id="description">
+        <img className='h-96 rounded-xl ' id='box' />
+        <p className= 'text-slate-900 h-32 mx-8 '>
            <br></br>
         Dreamtopia is a magic land where fairies, mermaids, witches, and all kinds of creatures live together peacefully. But what threatens this atmosphere is the loss of the Elephant King's crown. Play the Sparkle Mountain Royal Ride game to solve this problem quickly!
         The ruler asked Barbie and Chelsea to give him a hand, as their magical powers are the strongest. You should guide everyone through a rough journey and collect as many gems as possible. Are you in for a ride?
