@@ -262,14 +262,11 @@
 @media screen and (max-width: 414px) {
   .game-card {
       width: 590px;
-      height: 1050px;
-      margin-left: 15px;
+      height: 900px;
+      margin-left: 10px;
       margin-top: 70px;
    }
-  .game-card:hover {
-    height: 610px;
-    width: 390px;
-   }
+  
   .header{
     width: 155%;
    }
