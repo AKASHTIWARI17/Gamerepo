@@ -70,6 +70,7 @@
 }
 
 .buttom{
+  position: fixedgi;
   display: flex;
   justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.8);
