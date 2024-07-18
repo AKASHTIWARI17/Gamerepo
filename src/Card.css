@@ -262,7 +262,7 @@
 @media screen and (max-width: 414px) {
   .game-card {
       width: 590px;
-      height: 1100px;
+      height: 1050px;
       margin-left: 15px;
       margin-top: 70px;
    }
@@ -271,7 +271,7 @@
     width: 390px;
    }
   .header{
-    width: 150%;
+    width: 155%;
    }
    
   .logo{
