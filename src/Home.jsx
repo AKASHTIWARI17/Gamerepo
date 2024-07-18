@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-
+import './Card.css'
 
 function Home() {
   const newData = [
@@ -1827,10 +1827,10 @@ function Home() {
   ];
   return (
     <>
-      <header className=" header text-4xl bg-slate-900 text-slate-100 p-9 font-sans font-bold">
+      <header className="header text-4xl bg-slate-900 text-slate-100 py-5 font-sans font-bold">
         <img
           src={`${process.env.PUBLIC_URL}/logo-3.jpg`}
-          className="h-9 "
+          className="logo h-9 "
           alt="Logo"
         />
       </header>
