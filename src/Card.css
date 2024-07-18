@@ -70,7 +70,7 @@
 }
 
 .buttom{
-  position: fixedgi;
+  position: fixed;
   display: flex;
   justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.8);
@@ -176,6 +176,12 @@
       margin-top: 65px;
       
   }
+  .game-card:hover{
+    width: 560px;
+    height: 1030px;
+    margin-left: 10px;
+    margin-top: 70px;
+ }
  
   .header{
     width: 580px;
@@ -265,6 +271,12 @@
       margin-top: 70px;
    }
   
+   .game-card:hover{
+    width: 590px;
+    height: 920px;
+    margin-left: 10px;
+    margin-top: 70px;
+ }
   .header{
     width: 155%;
    }
