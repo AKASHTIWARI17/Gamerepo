@@ -1827,10 +1827,10 @@ function Home() {
   ];
   return (
     <>
-      <header className="header text-4xl bg-slate-900 text-slate-100 py-5 font-sans font-bold">
+      <header className=" header text-4xl bg-slate-900 text-slate-100 my-7 py-5 font-sans font-bold">
         <img
           src={`${process.env.PUBLIC_URL}/logo-3.jpg`}
-          className="logo h-9 "
+          className="logo"
           alt="Logo"
         />
       </header>

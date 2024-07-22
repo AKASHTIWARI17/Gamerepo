@@ -1,20 +1,20 @@
 import React from 'react';
-import './Background.css'
+import './Background.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
+
 function Background() {
   return (
     <>
     <div className="card">
      <div>
-      <h2 id='navbar'>Unlimeted mini Golf universe</h2>
-     <img src={`${process.env.PUBLIC_URL}/logo-3.jpg`} className='h-10' alt="Logo" id='nav-img' />
+      <h2 id='navbar'> Unlimeted mini Golf universe </h2>
+     <img src={`${process.env.PUBLIC_URL}/logo-3.jpg`} className='h-10 ' alt="Logo" id='nav-img'/>
      </div>
-        <img className='h-96 rounded-xl ' id='box' />
-           <div className="play-icon">
-            <FontAwesomeIcon icon={faPlay} />
-            </div>
-          <p className= 'text-slate-900 h-32 mx-8 '>
+      <div className='box'>
+        <FontAwesomeIcon icon={faPlay} className="play-icon" />
+       </div>
+          <p className= 'text-white h-32 mx-8 '>
            <br></br>
         Dreamtopia is a magic land where fairies, mermaids, witches, and all kinds of creatures live together peacefully. But what threatens this atmosphere is the loss of the Elephant King's crown. Play the Sparkle Mountain Royal Ride game to solve this problem quickly!
         The ruler asked Barbie and Chelsea to give him a hand, as their magical powers are the strongest. You should guide everyone through a rough journey and collect as many gems as possible. Are you in for a ride?
@@ -29,7 +29,7 @@ function Background() {
         Useful Tips
         Watch out for possible hazards, though. The red, spiky crystals will take one life from you. But if you see any warning signs beforehand, remember you will have to jump soon. Another thing that can cause harm is landing too hard on the ground, so be mindful of your steps.
         <br></br>
-        When it comes to your final score, the regular gems bring you 50 points, while the stars are worth 100 marks. And another tip – if you see big, round planets, jump. Trust me. It will take you to the right path.
+        When it comes to your final score, the regular gems bring you 50 points, while the stars are worth 100 marks. And another tip if you see big, round planets, jump. Trust me. It will take you to the right path.
         <br></br>
         Become the savior of Dreamtopia and help the Chelsea and Barbie restore the Elephant King's precious crown!`,
         </p>
