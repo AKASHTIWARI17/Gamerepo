@@ -9,7 +9,7 @@ function Background() {
     <div className="card">
      <div>
       <h2 id='navbar'> Unlimeted mini Golf universe </h2>
-     <img src={`${process.env.PUBLIC_URL}/logo-3.jpg`} className='h-10 ' alt="Logo" id='nav-img'/>
+     <img src={`${process.env.PUBLIC_URL}/logo-3.jpg`} className='h-9 ' alt="Logo" id='nav-img'/>
      </div>
       <div className='box'>
         <FontAwesomeIcon icon={faPlay} className="play-icon" />
@@ -41,6 +41,3 @@ function Background() {
 
 
 export default Background;
-
-
-
