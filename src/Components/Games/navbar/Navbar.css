@@ -1,0 +1,50 @@
+/* Basic styles for the navbar */
+.navbar {
+    display: none;
+}
+
+.play-icon {
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #121212;
+    
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+   
+}
+
+.icon {
+    font-size: 44px;
+}
+
+.first,
+.paragraph {
+    margin: 5px 0 0 0;
+    font-size: 28px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    .navbar {
+        display: block;
+    }
+}
+
+  

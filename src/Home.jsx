@@ -1834,7 +1834,6 @@ function Home() {
           alt="Logo"
         />
       </header>
-
       <div>
         {newData.map((data, index) => (
           <Card key={index} data={data} />
