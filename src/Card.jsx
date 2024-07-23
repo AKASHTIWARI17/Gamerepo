@@ -37,8 +37,7 @@ function Card({ data }) {
           <p id="description">{data.description}</p>
         </div>
       </div>
-
-      <Navbar />
+      <Navbar/>
     </>
   );
 }
