@@ -350,5 +350,35 @@
   
 }
 
+.card1:hover {
+  transform: scale(1.04); /* Scale up by 10% on hover */
+  transition: transform 0.2s ease; /* Smooth transition over 0.3 seconds */
+}
+.card1 {
+  position: relative; /* Ensure relative positioning for absolute positioning of play icon */
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play-icon svg {
+  width: 4rem; /* Adjust size of the play icon */
+  height: 4rem;
+}
+
+/* Hide play icon by default, show on hover */
+.play-icon svg {
+  opacity: 0;
+}
+
+.card1:hover .play-icon svg {
+  opacity: 1;
+}
+
+
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import './Card.css'
+import "./Card.css";
 
 function Home() {
   const newData = [
@@ -1834,7 +1834,7 @@ function Home() {
           alt="Logo"
         />
       </header>
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-5">
         {newData.map((data, index) => (
           <Card key={index} data={data} />
         ))}
