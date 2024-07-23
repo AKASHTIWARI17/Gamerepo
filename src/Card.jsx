@@ -26,15 +26,18 @@ function Card({ data }) {
         <img src={data.url} alt="Game" className="game-image" />
         <p id="description">{data.description}</p>
       </div> */}
-      <div class="max-w-sm card1 overflow-hidden bg-white border hover:cursor-pointer border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <a onClick={newTab}>
-          <img class="rounded-t-lg" src={data.url} alt="" />
-          <div class="play-icon">
-            <FontAwesomeIcon icon={faPlay} />
-          </div>
+      <div
+        onClick={newTab}
+        class="max-w-sm card1 mb-2 overflow-hidden   hover:cursor-pointer  rounded-lg shadow"
+      >
+        <a>
+          <img class="rounded" src={data.url} alt="" />
         </a>
-        <div class="p-5">
-          <p id="description">{data.description}</p>
+        <div class="p-2 text-white">
+          <p>{`${data.description.slice(0, 66)}..`}</p>
+        </div>
+        <div className="playicon2">
+          <FontAwesomeIcon icon={faPlay} />
         </div>
       </div>
 

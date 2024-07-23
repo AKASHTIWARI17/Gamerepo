@@ -40,11 +40,5 @@
     font-size: 28px;
 }
 
-/* Responsive styles for mobile devices */
-@media (max-width: 600px) {
-    .navbar {
-        display: block;
-    }
-}
 
   
