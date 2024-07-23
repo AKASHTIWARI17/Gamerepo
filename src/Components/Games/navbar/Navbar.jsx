@@ -11,7 +11,7 @@ function Navbar() {
             </div>
             <div className="bottom">
                 <div className="icon-container">
-                    <FontAwesomeIcon icon={faHouse} className="icon" />
+                    <FontAwesomeIcon icon={faHouse} className="icon-first" />
                     <p className="first">Home</p>
                 </div>
                 <div className="icon-container">

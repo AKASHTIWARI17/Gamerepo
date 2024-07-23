@@ -11,7 +11,7 @@
 
 .bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -21,25 +21,32 @@
 
 .icon-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction:column;
+    justify-content: space-evenly;
     height: 100px;
     width: 100%;
-    padding: 10px;
     color: #fff;
-   
 }
 
-.icon {
-    font-size: 44px;
+.icon-first {
+    padding-top: 20px;
+    font-size: 30px;
+    padding-right: 200px;
 }
 
-.first,
-.paragraph {
-    margin: 5px 0 0 0;
-    font-size: 28px;
+.icon-container .first{
+    margin-left: 18px;
 }
 
+.icon-container .icon{
+    padding-top: 20px;
+    font-size: 30px;
+    padding-left: 120px;
+}
+
+.icon-container .paragraph{
+    margin-left: 150px;
+}
 /* Responsive styles for mobile devices */
 @media (max-width: 600px) {
     .navbar {
