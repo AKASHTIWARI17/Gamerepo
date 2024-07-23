@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
 /* navbar */
 #navbar {
   height: 40px;
@@ -11,25 +13,27 @@
   background-color: #fff;
   top: 30px;
   color: #1f1f1f;
-  margin-left: 42px;
+  margin-left: 65px;
+  margin-right: 10px;
+  
 }
-
 #nav-img {
   position: relative;
-  left: 980px;
+  left: 1025px;
+  bottom: 8px;
 }
 
 .box{
   height: 400px;
-  width: 95%;
+  width: 94%;
   position: relative;
-  left: 40px;
-  border-radius: 10px;
+  left: 65px;
+  bottom: 16px;
   background-image: url("./background.png");
   background-size: cover;
   background-position: center;
   transform: translateY(10px); 
-
+  
 }
 
 .play-icon {
