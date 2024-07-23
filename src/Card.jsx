@@ -41,7 +41,7 @@ function Card({ data }) {
         </div>
       </div>
 
-      {/* <Navbar /> */}
+      <Navbar />
     </>
   );
 }

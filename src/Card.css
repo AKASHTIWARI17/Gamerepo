@@ -9,21 +9,21 @@
 }
 
 .game-card{
-  height: 338px;
-  width: 220px;
+  height: 400px;
+  width: 232px;
   border: 2px solid black;
-  margin: 15px;
+  margin: 10px;
   border-radius: 10px;
   display: inline-block;
   cursor: pointer;
-  justify-content: space-between;
+  
   /* transition: all 0.3s ease-in-out; */
 }
 .game-card{
   transform: translateY(-10px);
 }
 
-.play-icon {
+.play-icon{
   position: absolute;
   top: 60%;
   left: 50%;
@@ -69,59 +69,6 @@
   height: 50px;
   width: 220px;
   padding-left: 20px;
-}
-
-.buttom{
-  position: fixed;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 40px;
-  border-radius:5px;
-}
-
-.buttom .icon{
-  color: white;
-  padding-left:15px;
-}
-
-.buttom .first{
-  color: white;
-  position: relative;
-  top:15px;
-  left: -35px;
-}
-.buttom .iconsecond{
-  color: white;
-  position: relative;
-  right: -60px;
-}
-.buttom .paragraph{
-  color: #fff;
-  position: relative;
-  top:15px;
-}
-/* .buttom .first{
-  color: #fff;
-  position: absolute;
-  top:-25px;
-  left:24px;
-}
-.buttom .iconsecond{
-  position: absolute;
-  right: 35px;
-  font-size: 20px;
-  color:#fff;
-}
-.buttom p{
-  color: #fff;
-  position: relative;
-  top:15px;
-  left:35px;
-} */
-
-.buttom{
-  display: none;
 }
 
 /* Media queries for responsiveness */
