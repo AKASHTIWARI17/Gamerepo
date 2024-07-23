@@ -9,14 +9,14 @@
 }
 
 .game-card{
-  height: 338px;
-  width: 220px;
+  height: 400px;
+  width: 232px;
   border: 2px solid black;
-  margin: 15px;
+  margin: 10px;
   border-radius: 10px;
   display: inline-block;
   cursor: pointer;
-  justify-content: space-between;
+  
   /* transition: all 0.3s ease-in-out; */
 }
 .game-card{
@@ -101,24 +101,7 @@
   position: relative;
   top:15px;
 }
-/* .buttom .first{
-  color: #fff;
-  position: absolute;
-  top:-25px;
-  left:24px;
-}
-.buttom .iconsecond{
-  position: absolute;
-  right: 35px;
-  font-size: 20px;
-  color:#fff;
-}
-.buttom p{
-  color: #fff;
-  position: relative;
-  top:15px;
-  left:35px;
-} */
+
 
 .buttom{
   display: none;
@@ -128,26 +111,36 @@
 
 @media screen and (max-width: 1200px) {
   .game-card {
-      width: 290px;
-      height: 400px;
-      margin-top: 20px;
+      height: 410px;
+      width: 220px;
+      margin-top: 5px;
+      margin-left: 20px;
   }
-  /* .game-card:hover {
+  .game-card:hover {
     height: 410px;
-    width: 410px;
-  } */
+    width: 230px;
+    
+  }
+  .game-card #description{
+    margin: 5px 0;
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .game-card {
-      width: 250px;
+      width: 270px;
       height: 400px;
-      margin-top: 20px;
+    
+      /* margin-top: 20px; */
   }
-  /* .game-card:hover {
-    height: 410px;
-    width: 255px;
-  } */
+  .game-card:hover {
+    height: 408px;
+    width: 270px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+  }
   .logo:hover{
     margin-left: 40px;
     }
@@ -155,7 +148,7 @@
 
 @media screen and (max-width: 768px) {
   .game-card {
-      width: 220px;
+      width: 270px;
       height: 400px;
       margin: 10px;
       margin-top: 20px;
@@ -172,18 +165,20 @@
 
 @media screen and (max-width: 576px) {
   .game-card {
-      width: 560px;
-      height: 1030px;
-      border-radius: 40px;
-      margin-top: 65px;
-      
-  }
-  /* .game-card:hover{
     width: 560px;
-    height: 1030px;
+    height: 800px;
+    border-radius: 40px;
+    padding-left: 30px;
+    margin-top: -5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .game-card:hover {
+    height: 1130px;
     margin-left: 10px;
     margin-top: 70px;
- } */
+  }
+
  
   .header{
     width: 580px;
@@ -267,24 +262,27 @@
 
 @media screen and (max-width: 414px) {
   .game-card {
-      width: 590px;
-      height: 920px;
-      margin-left: 10px;
-      margin-top: 70px;
-   }
-  
-   .game-card:hover{
-    width: 590px;
-    height: 920px;
-    margin-left: 10px;
-    margin-top: 70px;
- }
+    width: 560px;
+    height: 414px;
+    border-radius: 40px;
+    /* padding-left: 30px;
+    margin-top: -5px; */
+    
+  }
+
+  .game-card:hover {
+    width: 650px;
+    height: 414px;
+    
+  }
+
   .header{
-    width: 155%;
+    width: 170%;
    }
    
   .logo{
-    margin-left:180px;
+    margin-left:200px;
+    font-size: 100px;
     }
    .buttom{
       opacity: 1;
