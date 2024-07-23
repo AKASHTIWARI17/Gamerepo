@@ -132,10 +132,10 @@
       height: 400px;
       margin-top: 20px;
   }
-  .game-card:hover {
+  /* .game-card:hover {
     height: 410px;
-    width: 300px;
-  }
+    width: 410px;
+  } */
 }
 
 @media screen and (max-width: 992px) {
@@ -144,10 +144,10 @@
       height: 400px;
       margin-top: 20px;
   }
-  .game-card:hover {
+  /* .game-card:hover {
     height: 410px;
     width: 255px;
-  }
+  } */
   .logo:hover{
     margin-left: 40px;
     }
@@ -160,10 +160,10 @@
       margin: 10px;
       margin-top: 20px;
     }
-  .game-card:hover {
+  /* .game-card:hover {
     height: 410px;
     width: 230px;
-    }
+    } */
   .logo:hover{
     margin-left: 40px;
     }
@@ -178,12 +178,12 @@
       margin-top: 65px;
       
   }
-  .game-card:hover{
+  /* .game-card:hover{
     width: 560px;
     height: 1030px;
     margin-left: 10px;
     margin-top: 70px;
- }
+ } */
  
   .header{
     width: 580px;

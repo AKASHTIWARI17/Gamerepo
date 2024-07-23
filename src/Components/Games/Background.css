@@ -9,15 +9,14 @@
 #navbar {
   height: 40px;
   text-align: center;
-  
   position: relative;
   background-color: #fff;
   top: 30px;
   color: #1f1f1f;
   margin-left: 65px;
   margin-right: 10px;
+  
 }
-
 #nav-img {
   position: relative;
   left: 1025px;
@@ -26,10 +25,10 @@
 
 .box{
   height: 400px;
-  width: 95%;
+  width: 94%;
   position: relative;
-  left: 60px;
-  border-radius: 10px;
+  left: 65px;
+  bottom: 16px;
   background-image: url("./background.png");
   background-size: cover;
   background-position: center;
