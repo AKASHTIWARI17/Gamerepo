@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import "./Bottombar.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faUser } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 function Bottombar() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
     const MyAccount = () => {
       navigate("/MyAccount");
@@ -15,7 +15,7 @@ function Bottombar() {
     return (
         <div className="bottombar">
             <div className="icon-container">
-                <FontAwesomeIcon icon={faHouse} className="icon"/>
+                <FontAwesomeIcon icon={faHouse} className="icon" />
                 <p className="label">Home</p>
             </div>
           

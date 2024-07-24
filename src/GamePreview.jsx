@@ -47,7 +47,7 @@ const GamePreview = () => {
                 </h5>
                 <div className="text-white">{card.likes}</div>
               </div>
-              <div className="overflow-y-auto h-96">
+              <div className="overflow-y-auto max-h-96">
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   {card.description}
                 </p>
