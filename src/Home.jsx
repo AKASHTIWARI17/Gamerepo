@@ -1850,11 +1850,15 @@ function Home() {
         {GameData.map((card) => (
           <div key={card.id}>
             <Link to={`/game/${card.id}`}>
-              <div class="max-w-sm card1 mb-2 overflow-hidden   hover:cursor-pointer  rounded-lg shadow">
+              <div class=" card1 mb-2 overflow-hidden   hover:cursor-pointer  rounded-lg shadow">
                 <div>
-                  <img class="rounded" src={card.url} alt="" />
+                  <img
+                    class=" image rounded h-72 w-60  "
+                    src={card.url}
+                    alt=""
+                  />
                 </div>
-                <div class="p-2 text-white">
+                <div class="p-2 text-white md:block hidden">
                   <p>{`${card.description.slice(0, 66)}..`}</p>
                 </div>
                 <div className="playicon2">
