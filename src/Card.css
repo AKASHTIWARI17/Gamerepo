@@ -70,8 +70,8 @@
 }
 
 .card1:hover {
-  transform: scale(1.04); /* Scale up by 10% on hover */
-  transition: transform 0.2s ease; /* Smooth transition over 0.3 seconds */
+  transform: scale(1.04);
+  transition: transform 0.2s ease; 
 }
 .playicon2 {
   position: absolute;

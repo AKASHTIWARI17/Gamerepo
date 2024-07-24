@@ -8,6 +8,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 function Background() {
   return (
     <div className="card">
+      
       <div>
         <div className="fill-white">
         <FontAwesomeIcon icon={faArrowLeft}/>

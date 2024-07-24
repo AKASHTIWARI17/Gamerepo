@@ -15,7 +15,7 @@ function Bottombar() {
     return (
         <div className="bottombar">
             <div className="icon-container">
-                <FontAwesomeIcon icon={faHouse} className="icon" />
+                <FontAwesomeIcon icon={faHouse} className="icon"/>
                 <p className="label">Home</p>
             </div>
           
