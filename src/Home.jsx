@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "./Card";
 import "./Card.css";
+import Navbar from "./Components/Navbar";
+import Bottombar from "./Components/Games/navbar/bottombar.jsx"; 
+
 
 function Home() {
   const newData = [
@@ -1827,18 +1830,22 @@ function Home() {
   ];
   return (
     <>
-      <header className=" header text-4xl bg-slate-900 text-slate-100 my-7 py-5 font-sans font-bold">
+      {/* <header className=" header text-4xl bg-slate-900 text-slate-100 mb-7 py-5 font-sans font-bold">
         <img
           src={`${process.env.PUBLIC_URL}/logo-3.jpg`}
           className="logo"
           alt="Logo"
         />
-      </header>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-5">
-        {newData.map((data, index) => (
-          <Card key={index} data={data} />
-        ))}
+      </header> */}
+      <Navbar/>
+      <div className="flex justify-center mt-24">
+        <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-4 mx-2 md:mx-5">
+          {newData.map((data, index) => (
+            <Card key={index} data={data} />
+          ))}
+        </div>
       </div>
+      <Bottombar/>
     </>
   );
 }

@@ -9,16 +9,14 @@
 }
 
 .game-card{
-  height: 400px;
+  height: 250px;
   width: 232px;
   border: 2px solid black;
   margin: 10px;
   border-radius: 10px;
   display: inline-block;
   cursor: pointer;
-  
-  /* transition: all 0.3s ease-in-out; */
-}
+ }
 .game-card{
   transform: translateY(-10px);
 }
@@ -71,273 +69,40 @@
   padding-left: 20px;
 }
 
-/* Media queries for responsiveness */
-
-@media screen and (max-width: 1200px) {
-  .game-card {
-      height: 410px;
-      width: 220px;
-      margin-top: 5px;
-      margin-left: 20px;
-  }
-  .game-card:hover {
-    height: 410px;
-    width: 230px;
-    
-  }
-  .game-card #description{
-    margin: 5px 0;
-    padding: 0 10px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .game-card {
-      width: 270px;
-      height: 400px;
-    
-  }
-  .game-card:hover {
-    height: 408px;
-    width: 270px;
-   
-  }
-  .logo:hover{
-    margin-left: 40px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-  .game-card {
-      width: 270px;
-      height: 400px;
-      margin: 10px;
-      margin-top: 20px;
-    }
-  /* .game-card:hover {
-    height: 410px;
-    width: 230px;
-    } */
-  .logo:hover{
-    margin-left: 40px;
-    }
-
-}
-
-@media screen and (max-width: 576px) {
-  .game-card {
-    width: 560px;
-    height: 800px;
-    border-radius: 40px;
-    padding-left: 30px;
-    margin-top: -5px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .game-card:hover {
-    height: 1130px;
-    margin-left: 10px;
-    margin-top: 70px;
-  }
-
- 
-  .header{
-    width: 580px;
-    height: 100px;
-   }
-  .logo{
-    margin-left: 31%;
-    height: 40px;
-   }
-  .game-image{
-    width: 100%;
-    height: 100%;
-    border-radius: 40px;
-   }
-  .logo:hover{
-    margin-left: 40px;
-    }
- 
-    .buttom{
-      opacity: 1;
-      position:fixed;
-      
-    }
-    .buttom {
-      display: flex;
-      justify-content: space-evenly;
-      background-color: rgba(0, 0, 0, 0.8);
-      height: 65px;
-      width: 560px;
-      border-radius: 5px;
-    }
-  
-    .buttom .icon {
-      color: white;
-      font-size: 30px;
-      padding-left: 0px;
-    }
-  
-    .buttom .first {
-      color: white;
-      position: relative;
-      font-size: 25px;
-      top: 25px;
-      left: -120px;
-    }
-  
-    .buttom .iconsecond {
-      color: white;
-      font-size: 35px;
-      position: relative;
-      right: -140px;
-    }
-  
-    .buttom .paragraph {
-      color: #fff;
-      font-size: 20px;
-      position: relative;
-      top: 32px;
-   
-    }
-    .play-icon {
-      position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%);
-      font-size: 80px;
-      color: #fff;
-      opacity: 0;
-      transition: opacity 0.3s, background-color 0.3s;
-      background-color: rgba(0, 0, 0, 0);
-      border-radius: 50%;
-      padding-left: 20px;
-      padding-right: 20px;
-      z-index: 1; 
-    }
-    .game-card:hover .play-icon {
-      opacity: 1;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
- }
-
-@media screen and (max-width: 414px) {
-  .game-card {
-    width: 320px;
-    height: 414px;
-    border-radius: 40px;
-    /* padding-left: 30px;
-    margin-top: -5px; */
-    
-  }
-
-  .game-card:hover {
-    width: 650px;
-    height: 414px;
-    
-  }
-
-  .header{
-    width: 170%;
-   }
-   
-  .logo{
-    margin-left:200px;
-    font-size: 100px;
-    }
-   .buttom{
-      opacity: 1;
-      position:fixed;
-      height: 60px;
-    }
-    .buttom {
-      display: flex;
-      justify-content: space-evenly;
-      background-color: rgba(0, 0, 0, 0.8);
-      height: 60px;
-      border-radius: 5px;
-    }
-  
-    .buttom .icon {
-      color: white;
-      font-size: 30px;
-      padding-left: 0px;
-    }
-  
-    .buttom .first {
-      color: white;
-      position: relative;
-      font-size: 25px;
-      top: 25px;
-      left: -120px;
-    }
-  
-    .buttom .iconsecond {
-      color: white;
-      font-size: 35px;
-      position: relative;
-      right: -140px;
-    }
-  
-    .buttom .paragraph {
-      color: #fff;
-      font-size: 20px;
-      position: relative;
-      top: 32px;
-   
-    }
-    .play-icon {
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 80px;
-      color: #fff;
-      opacity: 0;
-      transition: opacity 0.3s, background-color 0.3s;
-      background-color: rgba(0, 0, 0, 0); 
-      border-radius: 50%; 
-      padding-left: 20px; 
-      padding-right: 20px; 
-      
-    }
-    
-    .game-card:hover .play-icon {
-      opacity: 1;
-      background-color: rgba(0, 0, 0, 0.5); 
-    }
-  
-}
-
 .card1:hover {
   transform: scale(1.04); /* Scale up by 10% on hover */
   transition: transform 0.2s ease; /* Smooth transition over 0.3 seconds */
 }
-.card1 {
-  position: relative; /* Ensure relative positioning for absolute positioning of play icon */
-}
-
-.play-icon {
+.playicon2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.play-icon svg {
-  width: 4rem; /* Adjust size of the play icon */
-  height: 4rem;
-}
-
-/* Hide play icon by default, show on hover */
-.play-icon svg {
+  font-size: 80px;
+  color: #fff;
   opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s;
+  background-color: rgba(0, 0, 0, 0); 
+  border-radius: 50%; 
+  padding-left: 20px; 
+  padding-right: 20px; 
 }
-
-.card1:hover .play-icon svg {
+.card1:hover .playicon2 {
   opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5); 
 }
+@media (max-width: 768px) {
+  .image{
+    height: 21rem;
+    max-width: 95%;
+    margin: auto; 
+  }
 
-
-
-
+  .playicon2 {
+    bottom: 5px;
+    right: 5px;
+  }
+  .paragraph{
+    display: none;
+  }
+}

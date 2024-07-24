@@ -18,7 +18,7 @@ function Background() {
       <div className="box flex justify-center items-center">
         <img src={play} className="h-20" alt="Play Button" />
       </div>
-      <p className='text-white h-32 mx-20 -my-7'>
+      <p className='text-white h-24 text-sm/[17px] mx-20 -my-7 text-center'>
         <br />
         Dreamtopia is a magic land where fairies, mermaids, witches, and all kinds of creatures live together peacefully. But what threatens this atmosphere is the loss of the Elephant King's crown. Play the Sparkle Mountain Royal Ride game to solve this problem quickly!
         The ruler asked Barbie and Chelsea to give him a hand, as their magical powers are the strongest. You should guide everyone through a rough journey and collect as many gems as possible. Are you in for a ride?
@@ -35,7 +35,9 @@ function Background() {
         <br /><br />
         Become the savior of Dreamtopia and help the Chelsea and Barbie restore the Elephant King's precious crown!
       </p>
+      
      </div>
+     
  );
 }
 export default Background;
