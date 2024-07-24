@@ -1830,7 +1830,12 @@ function Home() {
       id: 88,
     },
   ];
-
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       {/* <header className=" header text-4xl bg-slate-900 text-slate-100 mb-7 py-5 font-sans font-bold">
@@ -1861,7 +1866,7 @@ function Home() {
         ))}
       </div>
       {/* {<GamePreview GameData={GameData} />} */}
-      <Bottombar />
+      <Bottombar scrollTo={scrollToTop} />
     </>
   );
 }
