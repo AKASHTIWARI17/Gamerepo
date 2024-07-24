@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import Bottombar from "./Components/Games/navbar/bottombar.jsx";
 
 function Home() {
   const GameData = [
@@ -1860,6 +1861,7 @@ function Home() {
         ))}
       </div>
       {/* {<GamePreview GameData={GameData} />} */}
+      <Bottombar />
     </>
   );
 }

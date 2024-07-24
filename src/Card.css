@@ -9,16 +9,14 @@
 }
 
 .game-card{
-  height: 400px;
+  height: 250px;
   width: 232px;
   border: 2px solid black;
   margin: 10px;
   border-radius: 10px;
   display: inline-block;
   cursor: pointer;
-  
-  /* transition: all 0.3s ease-in-out; */
-}
+ }
 .game-card{
   transform: translateY(-10px);
 }
@@ -71,9 +69,6 @@
   padding-left: 20px;
 }
 
-/* Media queries for responsiveness */
-
-
 .card1:hover {
   transform: scale(1.04); /* Scale up by 10% on hover */
   transition: transform 0.2s ease; /* Smooth transition over 0.3 seconds */
@@ -96,4 +91,18 @@
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5); 
 }
+@media (max-width: 768px) {
+  .image{
+    height: 21rem;
+    max-width: 95%;
+    margin: auto; 
+  }
 
+  .playicon2 {
+    bottom: 5px;
+    right: 5px;
+  }
+  .paragraph{
+    display: none;
+  }
+}
