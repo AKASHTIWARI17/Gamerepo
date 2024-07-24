@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./Card";
 import "./Card.css";
 import Navbar from "./Components/Navbar";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
-  const newData = [
+  const GameData = [
     {
       url: require("./images/barbie-dreamtopia-sparkle-mountain-royal-ride.jpg"),
       profilePic:
@@ -1826,6 +1829,7 @@ function Home() {
       id: 88,
     },
   ];
+
   return (
     <>
       {/* <header className=" header text-4xl bg-slate-900 text-slate-100 mb-7 py-5 font-sans font-bold">
@@ -1836,13 +1840,26 @@ function Home() {
         />
       </header> */}
       <Navbar />
-      <div className="flex justify-center mt-24">
-        <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-4 mx-2 md:mx-5">
-          {newData.map((data, index) => (
-            <Card key={index} data={data} />
-          ))}
-        </div>
+      <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-4 mx-2 md:mx-5 mt-28">
+        {GameData.map((card) => (
+          <div key={card.id}>
+            <Link to={`/game/${card.id}`}>
+              <div class="max-w-sm card1 mb-2 overflow-hidden   hover:cursor-pointer  rounded-lg shadow">
+                <div>
+                  <img class="rounded" src={card.url} alt="" />
+                </div>
+                <div class="p-2 text-white">
+                  <p>{`${card.description.slice(0, 66)}..`}</p>
+                </div>
+                <div className="playicon2">
+                  <FontAwesomeIcon icon={faPlay} />
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
       </div>
+      {/* {<GamePreview GameData={GameData} />} */}
     </>
   );
 }
