@@ -93,8 +93,8 @@
 }
 @media (max-width: 768px) {
   .image{
-    height: 21rem;
-    max-width: 95%;
+    /* height: 21rem;
+    max-width: 95%; */
     margin: auto; 
   }
 

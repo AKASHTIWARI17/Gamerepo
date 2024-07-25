@@ -1846,26 +1846,29 @@ function Home() {
         />
       </header> */}
       <Navbar />
-      <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-4 mx-2 md:mx-5 mt-28">
+      <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mx-2 md:mx-5 mt-[100px]">
         {GameData.map((card) => (
           <div key={card.id}>
-            <Link to={`/game/${card.id}`}>
-              <div class=" card1 mb-2 overflow-hidden   hover:cursor-pointer  rounded-lg shadow">
+            <div class=" card1 mb-2 overflow-hidden    rounded-lg shadow">
+              <a href={`https://playforia.fun/${card.htmlUrl}`} target="_blank">
                 <div>
                   <img
-                    class=" image rounded h-72 w-60  "
+                    class=" image rounded hover:cursor-pointer "
                     src={card.url}
                     alt=""
                   />
                 </div>
-                <div class="p-2 text-white md:block hidden">
-                  <p>{`${card.description.slice(0, 66)}..`}</p>
-                </div>
                 <div className="playicon2">
                   <FontAwesomeIcon icon={faPlay} />
                 </div>
+              </a>
+              <div class="p-2 text-white text-center md:block hidden">
+                <p>{`${card.description.slice(0, 66)}..`}</p>
+                <Link className="text-blue-700" to={`/game/${card.id}`}>
+                  seemore ➤
+                </Link>
               </div>
-            </Link>
+            </div>
           </div>
         ))}
       </div>
