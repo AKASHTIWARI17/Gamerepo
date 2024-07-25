@@ -17,7 +17,7 @@ const GamePreview = () => {
     <>
       <div className="card">
         <NavbarForBack name={extractedPart} />
-        <div className="mx-10 border rounded-md mb-2">
+        <div className="md:mx-10 border rounded-md mb-2">
           <a href={`https://playforia.fun/${card.htmlUrl}`} target="_blank">
             {" "}
             <div className="relative w-full hover:cursor-pointer">
