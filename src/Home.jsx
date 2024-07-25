@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import Bottombar from "./Components/Games/navbar/bottombar.jsx";
+import { Helmet } from "react-helmet";
 
 function Home() {
   const GameData = [
@@ -1836,6 +1837,7 @@ function Home() {
       behavior: "smooth",
     });
   };
+
   return (
     <>
       {/* <header className=" header text-4xl bg-slate-900 text-slate-100 mb-7 py-5 font-sans font-bold">
@@ -1849,31 +1851,63 @@ function Home() {
       <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mx-2 md:mx-5 mt-[100px]">
         {GameData.map((card) => (
           <div key={card.id}>
-            <div class=" card1 mb-2 overflow-hidden    rounded-lg shadow">
-              <a href={`https://playforia.fun/${card.htmlUrl}`} target="_blank">
-                <div>
-                  <img
-                    class=" image rounded hover:cursor-pointer "
-                    src={card.url}
-                    alt=""
-                  />
+            <div>
+              <div class=" card1 mb-2 overflow-hidden    rounded-lg shadow">
+                <a
+                  href={`https://playforia.fun/${card.htmlUrl}`}
+                  target="_blank"
+                >
+                  <div className="relative">
+                    <div>
+                      <img
+                        class=" image rounded hover:cursor-pointer "
+                        src={card.url}
+                        alt=""
+                      />
+                    </div>
+                    <div className="playicon2 hidden md:block">
+                      <FontAwesomeIcon icon={faPlay} />
+                    </div>
+                    <div className="absolute md:hidden inset-0 flex items-center justify-center">
+                      <FontAwesomeIcon
+                        className="text-white text-7xl bg-black/50 rounded-full p-5"
+                        icon={faPlay}
+                      />
+                    </div>
+                  </div>
+                </a>
+                <div class="p-2 text-white text-center md:block hidden">
+                  <p>{`${card.description.slice(0, 66)}..`}</p>
+                  <Link
+                    className="text-blue-600 text-base hover:text-blue-400"
+                    to={`/game/${card.id}`}
+                  >
+                    See More ➤
+                  </Link>
                 </div>
-                <div className="playicon2">
-                  <FontAwesomeIcon icon={faPlay} />
-                </div>
-              </a>
-              <div class="p-2 text-white text-center md:block hidden">
-                <p>{`${card.description.slice(0, 66)}..`}</p>
-                <Link className="text-blue-700" to={`/game/${card.id}`}>
-                  seemore ➤
-                </Link>
               </div>
             </div>
           </div>
         ))}
       </div>
-      {/* {<GamePreview GameData={GameData} />} */}
       <Bottombar scrollTo={scrollToTop} />
+      //helmet
+      {GameData.map((video, index) => (
+        <>
+          <Helmet>
+            <title>PlayForia | Home</title>
+            <meta name="description" content={video.description} />
+            <meta property="og:title" content={`Game: ${video.username}`} />
+            <meta property="og:description" content={video.description} />
+            <meta property="og:image" content={video.url} />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={`Game: ${video.username}`} />
+            <meta name="twitter:description" content={video.description} />
+            <meta name="twitter:image" content={video.url} />
+            <link rel="canonical" href={video.url} />
+          </Helmet>
+        </>
+      ))}
     </>
   );
 }

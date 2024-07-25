@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import play from "../src/images/play.png";
+import { Helmet } from "react-helmet";
 
 const GamePreview = () => {
   const { id } = useParams();
@@ -56,6 +57,23 @@ const GamePreview = () => {
           </a>
         </div>
       </div>
+      //helmet
+      {data.map((video, index) => (
+        <>
+          <Helmet>
+            <title>{`Game: ${extractedPart}`}</title>
+            <meta name="description" content={video.description} />
+            <meta property="og:title" content={`Game: ${video.username}`} />
+            <meta property="og:description" content={video.description} />
+            <meta property="og:image" content={video.url} />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={`Game: ${video.username}`} />
+            <meta name="twitter:description" content={video.description} />
+            <meta name="twitter:image" content={video.url} />
+            <link rel="canonical" href={video.url} />
+          </Helmet>
+        </>
+      ))}
     </>
   );
 };
