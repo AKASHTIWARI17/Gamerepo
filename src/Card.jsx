@@ -6,7 +6,7 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 function Card({ data }) {
   return (
     <>
-      <div class="max-w-sm card1 mb-2 overflow-hidden hover:cursor-pointer  rounded-lg shadow">
+      <div class="max-w-sm  card1 mb-2 overflow-hidden hover:cursor-pointer  rounded-lg shadow">
         <a>
           <img class=" image rounded h-52 w-60 " src={data.url} alt="" />
         </a>
