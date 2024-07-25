@@ -11,11 +11,13 @@ function Bottombar() {
       navigate("/MyAccount");
     };
      
-   
+   const gototop =()=>{
+    window.scrollTo({top:0 , left:0, behavior :"smooth"})
+   }
     return (
         <div className="bottombar">
             <div className="icon-container">
-                <FontAwesomeIcon icon={faHouse} className="icon" />
+                <FontAwesomeIcon icon={faHouse} className="icon" onClick={gototop}/>
                 <p className="label">Home</p>
             </div>
           

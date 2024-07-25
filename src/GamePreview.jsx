@@ -1,9 +1,8 @@
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import play from "../src/images/play.png";
 import { Helmet } from "react-helmet";
+import NavbarForBack from "./Components/NavbarForBack";
 
 const GamePreview = () => {
   const { id } = useParams();
@@ -16,17 +15,8 @@ const GamePreview = () => {
 
   return (
     <>
-      <div className="card ">
-        <div className="fill-white">
-          <FontAwesomeIcon icon={faArrowLeft} />
-          <h2 id="navbar"> Unlimited Free Game </h2>
-          <img
-            src={`${process.env.PUBLIC_URL}/logo-3.jpg`}
-            className="h-9"
-            alt="Logo"
-            id="nav-img"
-          />
-        </div>
+      <div className="card">
+        <NavbarForBack />
         <div className="mx-10 border rounded-md mb-2">
           <a href={`https://playforia.fun/${card.htmlUrl}`} target="_blank">
             {" "}
@@ -43,9 +33,7 @@ const GamePreview = () => {
             </div>
             <div className="flex flex-col justify-between p-4 leading-normal">
               <div className="content-between">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  {extractedPart}
-                </h5>
+                {extractedPart}
                 <div className="text-white">{card.likes}</div>
               </div>
               <div className="overflow-y-auto max-h-96">
