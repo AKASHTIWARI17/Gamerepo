@@ -14,8 +14,8 @@ const GamePreview = () => {
   const extractedPart = parts[2];
 
   return (
-    <>
-      <div className="card">
+    <> 
+      <div className="card my-14">  
         <NavbarForBack name={extractedPart} />
         <div className="md:mx-10 border rounded-md mb-2">
           <a href={`https://playforia.fun/${card.htmlUrl}`} target="_blank">

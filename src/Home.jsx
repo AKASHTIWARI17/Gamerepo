@@ -1852,7 +1852,7 @@ function Home() {
         {GameData.map((card) => (
           <div key={card.id}>
             <div>
-              <div class=" card1 mb-2 overflow-hidden    rounded-lg shadow">
+              <div class=" card1 mb-2 overflow-hidden rounded-lg shadow">
                 <a
                   href={`https://playforia.fun/${card.htmlUrl}`}
                   target="_blank"
@@ -1876,7 +1876,7 @@ function Home() {
                     </div>
                   </div>
                 </a>
-                <div class="p-2 text-white text-center md:block hidden">
+                <div class="p-2 text-white text-center">
                   <p>{`${card.description.slice(0, 66)}..`}</p>
                   <Link
                     className="text-blue-600 text-base hover:text-blue-400"

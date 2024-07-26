@@ -16,7 +16,7 @@ const NavbarForBack = ({ name }) => {
         />
       </div>
       <div className="text-center font-medium text-sm sm:text-base md:text-lg">
-        <h2>U{name}</h2>
+        <h2>{name}</h2>
       </div>
       <div className="flex items-center justify-center mt-2 sm:mt-0">
         <img
