@@ -15,8 +15,8 @@ const GamePreview = () => {
 
   return (
     <>
-        <NavbarForBack name={extractedPart}/>
-        <div className="card mt-16">
+      <NavbarForBack name={extractedPart} />
+      <div className="card mt-16">
         {/* <div className="md:mx-10 border rounded-md mb-2">
           <a href={`https://playforia.fun/${card.htmlUrl}`} target="_blank">
             {" "}
@@ -26,8 +26,8 @@ const GamePreview = () => {
                 src={card.url}
                 alt=""
               /> */}
-              {/* Play icon */}
-              {/* <div className="absolute inset-0 flex items-center justify-center ">
+        {/* Play icon */}
+        {/* <div className="absolute inset-0 flex items-center justify-center ">
                 <img src={play} className="h-20" alt="Play Button" />
               </div>
             </div>
@@ -44,28 +44,36 @@ const GamePreview = () => {
             </div>
           </a>
         </div> */}
-   <div className="bg-black ml-10 mr-10">
-   <a href={`https://playforia.fun/${card.htmlUrl}`} target="_blank" className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow dark:border-black dark:bg-black ">
-   <div className="w-full md:w-64 flex-shrink-0 relative">
-   <div className="relative">
-  <img
-    className="object-cover w-full mt-6 h-48 rounded-t-lg md:h-auto md:rounded-none md:rounded-l-lg"
-    src={card.url}
-    alt=""
-  />
-  <div className="absolute inset-0 flex items-center justify-center">
-    <img src={play} className="h-20" alt="Play Button" />
-  </div>
-</div>
-
-</div>
-    <div className="flex flex-col justify-between p-4 leading-normal w[800px]">
-        <p className="mb-1 text-base tracking-tight text-black dark:text-white">{card.description}</p>
-        {/* <p className="mb-3 font-normal text-white dark:text-white">Likes: {card.likes}</p> */}
-    </div>
-</a>
-   </div>
-
+        <div className=" mx-2 md:ml-10 md:mr-10 shadow shadow-transparent">
+          <a
+            href={`https://playforia.fun/${card.htmlUrl}`}
+            target="_blank"
+            className="flex flex-col md:flex-row rounded-lg shadow  "
+          >
+            <div className="w-full md:w-64 flex-shrink-0 relative">
+              <div className="relative">
+                <img
+                  className="object-cover w-full mt-6 h-48 rounded-t-lg md:h-auto md:rounded-none md:rounded-l-lg"
+                  src={card.url}
+                  alt=""
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <img src={play} className="h-20" alt="Play Button" />
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col  p-4 leading-normal w[800px] ">
+              <p className="text-white text-center text-lg md:text-xl">
+                {extractedPart.toUpperCase()}
+              </p>
+              <hr class="h-px my-2 bg-gray-200 border-0"></hr>
+              <p className="mb-1 text-base justify-between tracking-tight text-white overflow-y-auto h-96 no-scrollbar">
+                {card.description}
+              </p>
+              {/* <p className="mb-3 font-normal text-white dark:text-white">Likes: {card.likes}</p> */}
+            </div>
+          </a>
+        </div>
       </div>
       //helmet
       {data.map((video, index) => (
