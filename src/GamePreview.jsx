@@ -14,15 +14,15 @@ const GamePreview = () => {
   const extractedPart = parts[2];
 
   return (
-    <> 
-      <div className="card my-14">  
-        <NavbarForBack name={extractedPart} />
+    <>
+      <NavbarForBack name={extractedPart} />
+      <div className="card mt-16">
         <div className="md:mx-10 border rounded-md mb-2">
           <a href={`https://playforia.fun/${card.htmlUrl}`} target="_blank">
             {" "}
             <div className="relative w-full hover:cursor-pointer">
               <img
-                className="object-cover w-full max-h-80 rounded  "
+                className="object-contain w-full max-h-80 rounded  "
                 src={card.url}
                 alt=""
               />

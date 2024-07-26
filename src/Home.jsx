@@ -1874,9 +1874,15 @@ function Home() {
                         icon={faPlay}
                       />
                     </div>
+                    <div className="absolute md:hidden inset-0 flex text-justify items-end justify-center">
+                      <p className="text-white text-base font-medium bg-black/50 rounded px-4 p-2">{`${card.description.slice(
+                        0,
+                        100
+                      )}..`}</p>
+                    </div>
                   </div>
                 </a>
-                <div class="p-2 text-white text-center">
+                <div class="p-2 hidden md:block text-white text-center">
                   <p>{`${card.description.slice(0, 66)}..`}</p>
                   <Link
                     className="text-blue-600 text-base hover:text-blue-400"
