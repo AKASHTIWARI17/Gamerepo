@@ -20,7 +20,27 @@ code {
 
 
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Scroll snap settings for mobile devices */
+@media (max-width: 767px) {
+  .scroll-snap-container {
+    scroll-snap-type: y mandatory; /* Apply scroll snapping */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100vh; /* Ensure the container takes full viewport height */
+  }
+
+  .scroll-snap-item {
+    scroll-snap-align: start; /* Align items to the start of the container */
+    scroll-snap-stop: always; /* Always stop at each item */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    height: 100vh; /* Ensure each item takes full viewport height */
+    /* Optional: Add padding or margin if needed */
+  }
+}
