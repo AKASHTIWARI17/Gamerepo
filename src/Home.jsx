@@ -1905,16 +1905,16 @@ function Home() {
       <div className="grid grid-cols-1 scroll-snap-container  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mx-2 md:mx-5  md:mt-[100px]">
         {GameData.map((card) => (
           <div key={card.id}>
-            <div className="scroll-snap-item py-[4%]">
+            <div className="scroll-snap-item ">
               <div class=" card1 mb-2 overflow-hidden rounded-lg shadow">
                 <a
                   href={`https://playforia.fun/${card.htmlUrl}`}
                   target="_blank"
                 >
-                  <div className="relative">
-                    <div>
+                  <div className="relative ">
+                    <div className="max-h-[400px]">
                       <img
-                        class=" image rounded hover:cursor-pointer  md:pt-0 h-[calc(100% - 67px)]   md:h-auto"
+                        class=" image max-h-fit  rounded hover:cursor-pointer pt-3 md:pt-0   md:h-auto"
                         src={card.url}
                         alt=""
                       />
