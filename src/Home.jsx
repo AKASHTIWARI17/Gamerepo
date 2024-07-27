@@ -1905,14 +1905,14 @@ function Home() {
       <div className="grid grid-cols-1 scroll-snap-container  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mx-2 md:mx-5  md:mt-[100px]">
         {GameData.map((card) => (
           <div key={card.id}>
-            <div className="scroll-snap-item ">
+            <div className="scroll-snap-item py-[4%]">
               <div class=" card1 mb-2 overflow-hidden rounded-lg shadow">
                 <a
                   href={`https://playforia.fun/${card.htmlUrl}`}
                   target="_blank"
                 >
                   <div className="relative ">
-                    <div className="max-h-[400px]">
+                    <div className="max-h-96 md:max-h-max">
                       <img
                         class=" image max-h-fit  rounded hover:cursor-pointer pt-3 md:pt-0   md:h-auto"
                         src={card.url}
@@ -1932,7 +1932,7 @@ function Home() {
                       <div className="p-2 bg-black/50">
                         <p className="text-white text-base px-6 font-medium  rounded ">{`${card.description.slice(
                           0,
-                          90
+                          85
                         )} `}</p>
 
                         <p
@@ -1947,12 +1947,14 @@ function Home() {
                 </a>
                 <div class="p-2 hidden md:block text-white text-center">
                   <p>{`${card.description.slice(0, 66)}..`}</p>
-                  <Link
-                    className="text-blue-600 text-base hover:text-blue-400"
-                    to={`/game/${card.id}`}
-                  >
-                    See More ➤
-                  </Link>
+                  <div>
+                    <Link
+                      className="text-blue-600 text-base hover:text-blue-400"
+                      to={`/game/${card.id}`}
+                    >
+                      See More ➤
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
