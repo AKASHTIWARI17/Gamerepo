@@ -1914,7 +1914,7 @@ function Home() {
                   <div className="relative">
                     <div>
                       <img
-                        class=" image rounded hover:cursor-pointer pt-3 md:pt-0 h-[calc(100% - 67px)]   md:h-auto"
+                        class=" image rounded hover:cursor-pointer  md:pt-0 h-[calc(100% - 67px)]   md:h-auto"
                         src={card.url}
                         alt=""
                       />
