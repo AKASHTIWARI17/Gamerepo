@@ -1914,7 +1914,7 @@ function Home() {
                   <div className="relative ">
                     <div className="">
                       <img
-                        class="w-full md:full h-auto max-h-[480px] object-cover rounded hover:cursor-pointer"
+                        class="w-full md:full h-auto max-h-[600px] object-cover rounded hover:cursor-pointer"
                         src={card.url}
                         alt=""
                       />
