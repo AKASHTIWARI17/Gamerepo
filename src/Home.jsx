@@ -1912,9 +1912,9 @@ function Home() {
                   target="_blank"
                 >
                   <div className="relative ">
-                    <div className="max-h-96 md:max-h-max">
+                    <div className="">
                       <img
-                        class=" image max-h-fit  rounded hover:cursor-pointer pt-3 md:pt-0   md:h-auto"
+                        class="w-full md:full h-auto max-h-[400px] object-cover rounded hover:cursor-pointer"
                         src={card.url}
                         alt=""
                       />
@@ -1928,9 +1928,9 @@ function Home() {
                         icon={faPlay}
                       />
                     </div>
-                    <div className="absolute md:hidden inset-0 flex text-justify items-end justify-center  ">
-                      <div className="p-2 bg-black/50">
-                        <p className="text-white text-base px-6 font-medium  rounded ">{`${card.description.slice(
+                    <div className="absolute md:hidden inset-0 flex  items-end justify-center  ">
+                      <div className="p-1 bg-black/50">
+                        <p className="text-white text-base px-2 font-medium  rounded ">{`${card.description.slice(
                           0,
                           85
                         )} `}</p>
