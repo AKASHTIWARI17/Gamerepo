@@ -51,7 +51,8 @@ code {
     display: flex;
     align-items: center; /* Center content vertically */
     justify-content: center; /* Center content horizontally */
-    height: 100vh; /* Ensure each item takes full viewport height */
+    height: 100vh;
+     /* Ensure each item takes full viewport height */
     /* Optional: Add padding or margin if needed */
   }
 }

@@ -95,6 +95,7 @@
   .image{
     /* height: 8%; */
     max-width: 95%;
+    max-height: 10%;
     margin: auto; 
   }
 
