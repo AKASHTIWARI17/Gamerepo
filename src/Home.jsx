@@ -1902,7 +1902,7 @@ function Home() {
         ))}
     
       </div> */}
-      <div className="grid grid-cols-1 scroll-snap-container  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mx-2 md:mx-5  md:mt-[100px]">
+      <div className="grid grid-cols-1 scroll-snap-container  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mx-2 md:mx-5 mt-20  md:mt-[100px]">
         {GameData.map((card) => (
           <div key={card.id}>
             <div className="scroll-snap-item py-[4%]">
@@ -1914,7 +1914,7 @@ function Home() {
                   <div className="relative ">
                     <div className="">
                       <img
-                        class="w-full md:full h-auto max-h-[600px] object-cover rounded hover:cursor-pointer"
+                        class="w-full md:full h-auto  object-cover rounded hover:cursor-pointer"
                         src={card.url}
                         alt=""
                       />
