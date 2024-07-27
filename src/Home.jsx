@@ -1906,7 +1906,7 @@ function Home() {
         {GameData.map((card) => (
           <div key={card.id}>
             <div className="scroll-snap-item py-[4%]">
-              <div class=" card1 mb-2 overflow-hidden rounded-lg shadow">
+              <div class=" card1 mb-2 overflow-hidden rounded-lg shadow ">
                 <a
                   href={`https://playforia.fun/${card.htmlUrl}`}
                   target="_blank"
@@ -1914,7 +1914,7 @@ function Home() {
                   <div className="relative ">
                     <div className="">
                       <img
-                        class="w-full md:full h-auto max-h-[400px] object-cover rounded hover:cursor-pointer"
+                        class="w-full md:full h-auto max-h-[480px] object-cover rounded hover:cursor-pointer"
                         src={card.url}
                         alt=""
                       />
