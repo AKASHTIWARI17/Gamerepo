@@ -41,17 +41,24 @@ code {
   .scroll-snap-container {
     scroll-snap-type: y mandatory; /* Apply scroll snapping */
     -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-    overflow-y: auto; /* Enable vertical scrolling */
-    height: 100vh; /* Ensure the container takes full viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    height: 680px; /* Adjust height to accommodate top and bottom margins */
+    position: relative;
+    border-radius: 25px;
+    flex: auto;
+    justify-items: center;
   }
 
   .scroll-snap-item {
     scroll-snap-align: start; /* Align items to the start of the container */
     scroll-snap-stop: always; /* Always stop at each item */
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    height: 100vh; /* Ensure each item takes full viewport height */
-    /* Optional: Add padding or margin if needed */
+    padding: 10px;
+    position: relative;
+    height:100vh; /* Adjust height to account for top and bottom margins */
+    margin-bottom: 10px ; /* Add margin for  bottom spacing */
+    
+
   }
+
 }

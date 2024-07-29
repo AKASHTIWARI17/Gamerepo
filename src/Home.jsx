@@ -1903,57 +1903,71 @@ function Home() {
         ))}
     
       </div> */}
-      <div className="grid grid-cols-1 scroll-snap-container  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mx-2 md:mx-5  md:mt-[100px]">
+      <div className="grid grid-cols-1 scroll-snap-container  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mx-2 md:mx-5 mt-20  md:mt-[100px]">
         {GameData.map((card) => (
-          <div className="mt-20 md:mt-0" key={card.id}>
-            <div className="scroll-snap-item ">
-              <div class=" card1 mb-2 overflow-hidden rounded-lg shadow">
-                <a
-                  href={`https://playforia.fun/${card.htmlUrl}`}
-                  target="_blank"
+          <div key={card.id}>
+            <div className="scroll-snap-item py-[4%]">
+              <div class=" card1 mb-2 overflow-hidden rounded-lg shadow ">
+                <div
+                  onClick={() =>
+                    window.open(
+                      `https://playforia.fun/${card.htmlUrl}`,
+                      "_blank"
+                    )
+                  }
+                  className="relative cursor-pointer"
                 >
                   <div className="relative">
-                    <div>
-                      <img
-                        class=" image rounded hover:cursor-pointer h-[calc(80%+2rem)] w-[calc(100%+2rem)]  md:h-auto"
-                        src={card.url}
-                        alt=""
-                      />
-                    </div>
-                    <div className="playicon2 hidden md:block">
+                    <img
+                      className="w-full md:full h-auto object-cover rounded"
+                      src={card.url}
+                      alt={card.description || "Game Thumbnail"}
+                    />
+
+                    <div className="hidden md:block playicon2 absolute inset-0 flex items-center justify-center">
                       <FontAwesomeIcon icon={faPlay} />
                     </div>
+
                     <div className="absolute md:hidden inset-0 flex items-center justify-center">
                       <FontAwesomeIcon
                         className="text-white text-7xl bg-black/50 rounded-full p-5"
                         icon={faPlay}
                       />
                     </div>
-                    <div className="absolute md:hidden inset-0 flex text-justify items-end justify-center  ">
-                      <div className="p-2 bg-black/50">
-                        <p className="text-white text-base px-6 font-medium  rounded ">{`${card.description.slice(
-                          0,
-                          90
-                        )} `}</p>
 
-                        <p
-                          className="text-white text-center text-base px-6 hover:text-blue-400"
-                          onClick={() => handlegameredirect(card.id)}
-                        >
-                          See More ➤
+                    <div className="absolute md:hidden inset-0 flex items-end justify-center">
+                      <div className="p-1 bg-black/50 ">
+                        <p className="text-white text-base px-2 font-medium rounded">
+                          {`${card.description.slice(0, 85)}${
+                            card.description.length > 85 ? "..." : ""
+                          }`}
                         </p>
+                        <div className="flex justify-center">
+                          <button
+                            className="text-white text-center text-base px-6 hover:text-blue-400"
+                            onClick={(e) => {
+                              e.stopPropagation(); // Prevent the click event from bubbling up
+                              handlegameredirect(card.id);
+                            }}
+                          >
+                            See More ➤
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </a>
-                <div class="p-2 hidden md:block text-white text-center">
+                </div>
+
+                <div class="p-2 hidden  md:block text-white text-center">
                   <p>{`${card.description.slice(0, 66)}..`}</p>
-                  <Link
-                    className="text-blue-600 text-base hover:text-blue-400"
-                    to={`/game/${card.id}`}
-                  >
-                    See More ➤
-                  </Link>
+                  <div>
+                    <Link
+                      className="text-blue-600 text-base hover:text-blue-400"
+                      to={`/game/${card.id}`}
+                    >
+                      See More ➤
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
