@@ -8,6 +8,7 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import Bottombar from "./Components/Games/navbar/bottombar.jsx";
 import { Helmet } from "react-helmet";
 
+
 function Home() {
   const navigate = useNavigate();
   const GameData = [
@@ -1542,7 +1543,6 @@ function Home() {
       description: "",
       song: "orijinal ses - Computer Science",
       htmlUrl: "../21-games/beachy-keen-spongebob/index.html",
-      
       likes: 9689,
       comments: 230,
       saves: 1037,
@@ -1990,8 +1990,10 @@ function Home() {
             <meta name="twitter:image" content={video.url} />
             <link rel="canonical" href={video.url} />
           </Helmet>
+          
         </>
       ))}
+     
     </>
   );
 }
