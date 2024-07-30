@@ -8,7 +8,6 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import Bottombar from "./Components/Games/navbar/bottombar.jsx";
 import { Helmet } from "react-helmet";
 
-
 function Home() {
   const navigate = useNavigate();
   const GameData = [
@@ -1990,10 +1989,17 @@ function Home() {
             <meta name="twitter:image" content={video.url} />
             <link rel="canonical" href={video.url} />
           </Helmet>
-          
         </>
       ))}
-     
+        { process.env.NODE_ENV == "production" &&(
+            <script
+            strategy="lazyOnload"
+            async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9530500945466132"
+            crossorigin="anonymous">
+
+            </script>
+          )
+        } 
     </>
   );
 }
