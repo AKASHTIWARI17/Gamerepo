@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Card from "./Card";
+// import React, { useState } from "react";
+// import Card from "./Card";
 import "./Card.css";
 import Navbar from "./Components/Navbar";
 import { Link, useNavigate } from "react-router-dom";
@@ -1924,15 +1924,15 @@ function Home() {
                     />
 
                     <div className="hidden md:block playicon2 absolute inset-0 flex items-center justify-center">
-                      <FontAwesomeIcon icon={faPlay} />
+                    <FontAwesomeIcon icon={faPlay} />
                     </div>
 
-                    <div className="absolute md:hidden inset-0 flex items-center justify-center">
-                      <FontAwesomeIcon
-                        className="text-white text-7xl bg-black/50 rounded-full p-5"
-                        icon={faPlay}
-                      />
-                    </div>
+                      <div className="absolute md:hidden inset-0 flex items-center justify-center">
+                        <div className="bg-black/50 rounded-full p-2">
+                        <FontAwesomeIcon className="text-white text-7xl" icon={faPlay} />
+                         </div>
+                        </div>
+
 
                     <div className="absolute md:hidden inset-0 flex items-end justify-center">
                       <div className="p-1 bg-black/50 ">
@@ -1973,7 +1973,7 @@ function Home() {
           </div>
         ))}
       </div>
-      <Bottombar scrollTo={scrollToTop} />
+      <Bottombar scrollTo={scrollToTop}/>
       //helmet
       {GameData.map((video, index) => (
         <>
@@ -1991,7 +1991,7 @@ function Home() {
           </Helmet>
         </>
       ))}
-        { process.env.NODE_ENV == "production" &&(
+        {process.env.NODE_ENV == "production" &&(
             <script
             strategy="lazyOnload"
             async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9530500945466132"
