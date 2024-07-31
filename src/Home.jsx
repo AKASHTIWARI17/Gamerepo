@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import Bottombar from "./Components/Games/navbar/bottombar.jsx";
 import { Helmet } from "react-helmet";
+import AdSense from "./Components/ads/AdSense.jsx";
 
 function Home() {
   const navigate = useNavigate();
@@ -1902,7 +1903,8 @@ function Home() {
         ))}
     
       </div> */}
-      <div className="grid grid-cols-1 scroll-snap-container  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mx-2 md:mx-5 mt-20  md:mt-[100px]">
+      <AdSense />
+      <div className="grid grid-cols-1 scroll-snap-container  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mx-2 md:mx-5 mt-16  md:mt-[100px]">
         {GameData.map((card) => (
           <div key={card.id}>
             <div className="scroll-snap-item py-[4%]">
@@ -1920,7 +1922,7 @@ function Home() {
                     <img
                       className="w-full md:full h-auto object-cover rounded"
                       src={card.url}
-                      alt={card.description || "Game Thumbnail"}
+                      alt="Game Thumbnail"
                     />
 
                     <div className="hidden md:block playicon2 absolute inset-0 flex items-center justify-center">
