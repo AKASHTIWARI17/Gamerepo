@@ -1993,6 +1993,15 @@ function Home() {
           </Helmet>
         </>
       ))}
+        { process.env.NODE_ENV == "production" &&(
+            <script
+            strategy="lazyOnload"
+            async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9530500945466132"
+            crossorigin="anonymous">
+
+            </script>
+          )
+        } 
     </>
   );
 }
